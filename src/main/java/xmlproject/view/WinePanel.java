@@ -59,7 +59,10 @@ public class WinePanel extends JPanel{
         });
 		add(removeWineButton);
 		
-		
+		winesCountLabel.setBounds(10, 40, 250, 25);
+		winesCountLabel.setVerticalAlignment(JLabel.TOP);
+		winesCountLabel.setVerticalTextPosition(JLabel.TOP);
+		add(winesCountLabel);
 		
 		showWinesAll();
 		
@@ -68,9 +71,8 @@ public class WinePanel extends JPanel{
 
 	public void showWinesAll()
 	{
-		List<Wine> wines = new List<>(); // = wineManager.getInstance().getAllWines();
-		
-		
+		List<Wine> wines = WineManager.getInstance().getAllWines();
+
 		showWines(wines);
 	}
 	
@@ -82,13 +84,13 @@ public class WinePanel extends JPanel{
 		revalidate();
 		if(wines.size() == 0) {
 			winesCountLabel.setFont(new Font("Helvetica", Font.PLAIN, 18));
-			winesCountLabel.setText("Brak wydarzeñ tego dnia.");
+			winesCountLabel.setText("Brak win w bibliotece.");
 			removeWineButton.setVisible(false);
 			winesScrollPane.setVisible(false);
 			winesScrollPane.repaint();
 		}
 		else {
-			String content = "Liczba wydarzeñ: " + wines.size() + "";
+			String content = "Liczba win: " + wines.size() + "";
 			removeWineButton.setVisible(true);
 			
 			List<String> winesList = new ArrayList<String>();
