@@ -1,9 +1,13 @@
 package xmlproject.view;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 import xmlproject.controller.WineManager;
 
@@ -33,6 +37,53 @@ public class MainWindow extends JFrame
 			setLayout(null);
 			setResizable(false);
 			getContentPane().setBackground(new Color(240, 240, 240));
+			
+			initializeMenuBar();
+			
+			winePanel = new WinePanel(wineManager);
+			winePanel.setBounds(530, 10, 550, 530);
+			add(winePanel);
+			
+			
+			winePanel.showPanel();
+			
+			
+			
+		}
+
+		private void initializeMenuBar() {
+
+			menuBar = new JMenuBar();
+			setJMenuBar(menuBar);
+			
+			JMenu mnFile = new JMenu("Plik");
+			menuBar.add(mnFile);
+			
+			JMenuItem mnOpenFile = new JMenuItem("Otwórz z...");
+			mnFile.add(mnOpenFile);
+			
+			
+			mnOpenFile.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e)
+				{
+//					NewEventDialog newEventDialog = new NewEventDialog(calendarPanel.getCurrentDate());
+	//				newEventDialog.setVisible(true);
+//					eventsPanel.showEventsFromDay(calendarPanel.getCurrentDate());
+				}
+			});
+			
+			JMenuItem mnSaveFile = new JMenuItem("Zapisz do...");
+			mnFile.add(mnSaveFile);
+			
+		
+			mnSaveFile.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e)
+				{
+//					NewEventDialog newEventDialog = new NewEventDialog(calendarPanel.getCurrentDate());
+	//				newEventDialog.setVisible(true);
+//					eventsPanel.showEventsFromDay(calendarPanel.getCurrentDate());
+				}
+			});
 			
 			
 		}
