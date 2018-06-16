@@ -66,13 +66,15 @@ public class WinePanel extends JPanel{
 		
 		showWinesAll();
 		
+		System.out.println("1");
 		
 	}
 
 	public void showWinesAll()
 	{
 		List<Wine> wines = WineManager.getInstance().getAllWines();
-
+		
+		System.out.println("2");
 		showWines(wines);
 	}
 	
@@ -109,6 +111,8 @@ public class WinePanel extends JPanel{
 			add(winesScrollPane);
 			
 		}
+		
+		System.out.println("3");
 	}
 	
 	
