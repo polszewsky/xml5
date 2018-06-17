@@ -10,8 +10,10 @@ import org.simpleframework.xml.Root;
 @Root(name="wine")
 public class Wine
 {
+	public Wine() {}
 	
-	@Attribute(name="id")
+	
+	@Attribute(name="id", empty="false")
 	private String id;
 	
 	@Attribute(name="available")
@@ -20,28 +22,28 @@ public class Wine
 	@Element(name="name")
 	private String name;
 	
-	@Element
+	@Element(name="country")
 	private Country country;
 	
-	@Element
+	@Element(name="color")
 	private String color;
 	
-	@Element
+	@Element(name="taste")
 	private String taste;
 	
-	@Element
+	@Element(name="year")
 	private int year;
 	
-	@Element
+	@Element(name="alcohol")
 	private String alcohol;
 	
-	@Element
+	@Element(name="volume")
 	private String volume;
 	
-	@Element
+	@Element(name="price")
 	private Price pirce;
 	
-	@Element
+	@Element(name="shipment")
 	private Shipment shipment;
 	
 	

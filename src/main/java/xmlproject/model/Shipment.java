@@ -6,7 +6,9 @@ import org.simpleframework.xml.Attribute;
 
 public class Shipment
 {
-
+	public Shipment() {}
+	
+	
 	@Attribute(name="status")
 	private String status;
 	

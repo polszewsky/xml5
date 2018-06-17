@@ -4,7 +4,8 @@ import org.simpleframework.xml.Element;
 
 public class Country
 {
-
+	public Country() {}
+	
 	private String text;
 	
 	@Element(name="cont")

@@ -8,10 +8,10 @@ public class Price
 
 	private String text;
 	
-	@Element
+	@Element(name="vat")
 	private String vat;
 
-	@Text
+
 	public String getText() {
 		return text;
 	}

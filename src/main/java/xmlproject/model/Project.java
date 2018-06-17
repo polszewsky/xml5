@@ -1,5 +1,6 @@
 package xmlproject.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +11,10 @@ import org.simpleframework.xml.Root;
 @Root(name="project")
 public class Project
 {
-	@ElementList(entry="author", inline=true)
+	public Project() {}
+	
+	
+	@ElementList(entry="author", inline=true, required=false)
 	private List<Author> author;
 	
 	@Element(name="mod")

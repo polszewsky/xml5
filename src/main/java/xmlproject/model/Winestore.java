@@ -6,17 +6,21 @@ import java.util.List;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementArray;
 import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
 
+@Root(name="winestore")
 public class Winestore 
 {
-
-	@ElementList
-	private List<Project> project;
 	
-	@ElementList
-	private List<Wine> wines;
 	
-	@Element
+	
+	@Element(name="project")
+	private Project project;
+	
+	@ElementList(inline = true, required = false)
+	private List<Wine> wine;
+	
+	@Element(name="moddate")
 	private String moddate;
 	
 	@ElementArray(entry="p")
@@ -44,19 +48,27 @@ public class Winestore
 	
 	public Winestore()
 	{
-		this.wines = new ArrayList<Wine>();
+		this.wine = new ArrayList<Wine>();
 	}
 	
 	
 	public void clearWinestore()
 	{
-		wines.clear();
+		wine.clear();
 	}
 	
 	
 	public List<Wine> getWineList()
 	{
-		return wines;
+		return wine;
+	}
+
+
+
+	public void addWine(Wine w) {
+		
+		wine.add(w);
+		
 	}
 	
 }

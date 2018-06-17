@@ -1,18 +1,22 @@
 package xmlproject.model;
 
 import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Root;
 import org.simpleframework.xml.Text;
 
+@Root(name="author")
 public class Author
 {
-
+	public Author() {}
+	
+	
 	@Attribute
     private String departament;
 	
 	@Attribute
 	private String faculty;
 	
-	@Text
+	
 	private String value;
 
 	
