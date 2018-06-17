@@ -16,7 +16,7 @@ public class Author
 	@Attribute
 	private String faculty;
 	
-	
+	@Text
 	private String value;
 
 	

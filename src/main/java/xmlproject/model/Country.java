@@ -1,22 +1,27 @@
 package xmlproject.model;
 
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+import org.simpleframework.xml.Text;
 
+@Root(name="country")
 public class Country
 {
 	public Country() {}
 	
-	private String text;
 	
-	@Element(name="cont")
+	private String value;
+	
+	@Element(name="cont", required = false)
 	private String cont;
 
-	public String getText() {
-		return text;
+	
+	public String getValue() {
+		return value;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setValue(String v) {
+		this.value = v;
 	}
 
 	public String getCont() {

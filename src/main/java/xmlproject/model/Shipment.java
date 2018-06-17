@@ -3,6 +3,7 @@ package xmlproject.model;
 import java.util.Date;
 
 import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Text;
 
 public class Shipment
 {
@@ -12,6 +13,7 @@ public class Shipment
 	@Attribute(name="status")
 	private String status;
 	
+	@Text
 	private Date text;
 
 	public String getStatus() {

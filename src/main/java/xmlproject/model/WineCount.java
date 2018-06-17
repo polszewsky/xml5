@@ -9,4 +9,12 @@ public class WineCount
 
 	@Element(name="p")
 	private String p;
+
+	public String getP() {
+		return p;
+	}
+
+	public void setP(String p) {
+		this.p = p;
+	}
 }

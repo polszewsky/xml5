@@ -47,6 +47,26 @@ public class Winestore
 		      return wineAvailable;           
 		   }
 	   
+	   
+	   
+	   
+	   
+	public Project getProject() {
+		return project;
+	}
+
+	public void setProject(Project project) {
+		this.project = project;
+	}
+
+	public String getModdate() {
+		return moddate;
+	}
+
+	public void setModdate(String moddate) {
+		this.moddate = moddate;
+	}
+
 	public Winestore()
 	{
 		this.wine = new ArrayList<Wine>();
