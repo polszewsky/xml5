@@ -4,10 +4,14 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 import org.simpleframework.xml.Text;
 
-@Root
+@Root(name="price")
 public class Price
 {
 
+	public Price()
+	{
+		super();
+	}
 	
 	private String value;
 	
