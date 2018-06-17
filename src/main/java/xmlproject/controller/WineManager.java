@@ -3,9 +3,10 @@ package xmlproject.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import xmlproject.exception.RepoException;
 import xmlproject.model.Wine;
 import xmlproject.model.Winestore;
+import xmlproject.repository.WineXMLRepository;
 
 public class WineManager {
 
@@ -27,8 +28,8 @@ public class WineManager {
 
 	
 	/**
-	 * Zwraca wszystkie zdarzenia z kalendarza
-	 * @return lista obiektow klasy Event
+	 * Zwraca wszystkie wina z Winestore
+	 * @return lista obiektow klasy Wine
 	 */
 	public ArrayList<Wine> getAllWines() {
 		ArrayList<Wine> result = new ArrayList<Wine>();
@@ -36,6 +37,40 @@ public class WineManager {
 			result.add(w.clone());
 		return result;
 	}
+
+	public void importFromXML() throws RepoException
+	{
+		
+		WineXMLRepository repository = new WineXMLRepository(winestore);
+		
+		repository.importObjects();
+		System.out.println("imported from XML 1");
+	}
 	
+	public void exportToXML() throws RepoException
+	{
+		WineXMLRepository repository = new  WineXMLRepository(winestore);
+		
+		repository.exportObjects();
+		
+		System.out.println("imported to XML 1");
+	}
 	
+	public void updateXML() throws RepoException
+	{
+		
+		WineXMLRepository repository = new WineXMLRepository(winestore);
+		
+		repository.updateObjects();
+		System.out.println("updated XML 1");
+	}
+	
+	public void deleteXML() throws RepoException
+	{
+		WineXMLRepository repository = new  WineXMLRepository(winestore);
+		
+		repository.deleteObjects();
+		
+		System.out.println("deleted to XML 1");
+	}
 }

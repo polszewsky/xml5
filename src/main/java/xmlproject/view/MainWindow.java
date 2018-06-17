@@ -8,8 +8,10 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 
 import xmlproject.controller.WineManager;
+import xmlproject.exception.RepoException;
 
 @SuppressWarnings("serial")
 public class MainWindow extends JFrame
@@ -28,7 +30,7 @@ public class MainWindow extends JFrame
 		public MainWindow()
 		{
 			
-			// wineManager = WineManager.getInstance();
+			wineManager = WineManager.getInstance();
 			
 			
 			setBounds(100, 100, 1000, 600);
@@ -66,9 +68,25 @@ public class MainWindow extends JFrame
 			mnOpenFile.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e)
 				{
-//					NewEventDialog newEventDialog = new NewEventDialog(calendarPanel.getCurrentDate());
-	//				newEventDialog.setVisible(true);
-//					eventsPanel.showEventsFromDay(calendarPanel.getCurrentDate());
+					
+					
+					try
+					{
+						wineManager.importFromXML();
+						
+						JOptionPane.showMessageDialog(null, "imported XML.");
+					}
+					catch (RepoException e1)
+					{
+						
+						e1.printStackTrace();
+						
+						JOptionPane.showMessageDialog(null, "**ERROR** importing xml.", "Error", JOptionPane.ERROR_MESSAGE);
+					}
+					finally
+					{
+					winePanel.showWinesAll();
+					}
 				}
 			});
 			
@@ -79,9 +97,22 @@ public class MainWindow extends JFrame
 			mnSaveFile.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e)
 				{
-//					NewEventDialog newEventDialog = new NewEventDialog(calendarPanel.getCurrentDate());
-	//				newEventDialog.setVisible(true);
-//					eventsPanel.showEventsFromDay(calendarPanel.getCurrentDate());
+					try
+					{
+						wineManager.exportToXML();
+						
+						JOptionPane.showMessageDialog(null, "exported XML.");
+					}
+					catch (RepoException e1)
+					{
+						
+						e1.printStackTrace();
+						JOptionPane.showMessageDialog(null, "**ERROR** exporting xml.", "Error", JOptionPane.ERROR_MESSAGE);
+					}
+					finally
+					{
+					winePanel.showWinesAll();
+					}
 				}
 			});
 			
