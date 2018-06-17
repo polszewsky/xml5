@@ -54,7 +54,8 @@ public class MainWindow extends JFrame
 		}
 
 		private void initializeMenuBar() {
-
+			
+			// menu bar
 			menuBar = new JMenuBar();
 			setJMenuBar(menuBar);
 			
@@ -64,7 +65,7 @@ public class MainWindow extends JFrame
 			JMenuItem mnOpenFile = new JMenuItem("Otwórz z...");
 			mnFile.add(mnOpenFile);
 			
-			
+			// akcja otwarcia pliku xml
 			mnOpenFile.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e)
 				{
@@ -93,7 +94,7 @@ public class MainWindow extends JFrame
 			JMenuItem mnSaveFile = new JMenuItem("Zapisz do...");
 			mnFile.add(mnSaveFile);
 			
-		
+			// akcja zapisu pliku xml
 			mnSaveFile.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e)
 				{
