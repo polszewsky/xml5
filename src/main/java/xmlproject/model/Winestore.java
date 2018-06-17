@@ -23,29 +23,30 @@ public class Winestore
 	@Element(name="moddate")
 	private String moddate;
 	
-	@ElementArray(entry="p")
-	   private String[] wineCount;        
+	@Element(name="wineCount")
+	private WineCount wineCount;        
 
-	   public String[] getWineCount() {
-	      return wineCount;           
-	   }
-	
-	@ElementArray(entry="p")
-	   private String[] wineAvailable;        
+	@ElementList(name="wineAvailable")
+	private List<String> wineAvailable;        
 
-	   public String[] getWineAvailable() {
-	      return wineAvailable;           
-	   }
+	@ElementList(name="wineColor")
+	private List<String> wineColor;        
+       
 
-	@ElementArray(entry="p")
-	   private String[] wineColor;        
 
-	   public String[] getWineColor() {
-	      return wineColor;           
-	   }
 	
+	   public WineCount getWineCount() {
+		      return wineCount;           
+		   }
 	
-	
+	   public List<String> getWineColor() {
+		      return wineColor;           
+		   }
+	   
+	   public List<String> getWineAvailable() {
+		      return wineAvailable;           
+		   }
+	   
 	public Winestore()
 	{
 		this.wine = new ArrayList<Wine>();
