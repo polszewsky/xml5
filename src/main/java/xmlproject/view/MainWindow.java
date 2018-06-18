@@ -69,12 +69,34 @@ public class MainWindow extends JFrame
 			mnFile.addSeparator();
 			
 			
-			
+			//dodanie nowego wina
 			mnAddWine.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e)
 				{
 					
+					NewWineDialog newWineDialog = new NewWineDialog();
+					newWineDialog.setVisible(true);
+			
 				}
+			});
+			
+			
+			JMenuItem refresh = new JMenuItem("Odswiez");
+			mnFile.add(refresh);
+			mnFile.addSeparator();
+			mnFile.addSeparator();
+			
+			
+			refresh.addActionListener(new ActionListener() {			
+				public void actionPerformed(ActionEvent e)
+				{
+					
+
+					winePanel.showWinesAll();
+					
+					JOptionPane.showMessageDialog(null, "Odsiwezono.");
+				}	
+				
 			});
 			
 			

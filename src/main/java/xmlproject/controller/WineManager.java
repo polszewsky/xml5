@@ -86,4 +86,10 @@ public class WineManager {
 //		}
 //		
 	}
+
+	public void addNewWine(Wine w) {
+		
+		winestore.addWine(w);
+		
+	}
 }
