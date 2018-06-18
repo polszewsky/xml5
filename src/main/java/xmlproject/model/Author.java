@@ -10,6 +10,14 @@ public class Author
 	public Author() {}
 	
 	
+	public Author(String departament, String faculty, String value) {
+		super();
+		this.departament = departament;
+		this.faculty = faculty;
+		this.value = value;
+	}
+
+
 	@Attribute
     private String departament;
 	

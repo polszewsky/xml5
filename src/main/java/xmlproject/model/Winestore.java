@@ -11,7 +11,11 @@ import org.simpleframework.xml.Root;
 @Root(name="winestore")
 public class Winestore 
 {
-	
+
+	public Winestore()
+	{
+		this.wine = new ArrayList<Wine>();
+	}
 	
 	
 	@Element(name="project")
@@ -35,21 +39,39 @@ public class Winestore
 
 
 	
-	   public WineCount getWineCount() {
+	 public List<Wine> getWine() {
+		return wine;
+	}
+
+	public void setWine(List<Wine> wine) {
+		this.wine = wine;
+	}
+
+	public void setWineCount(WineCount wineCount) {
+		this.wineCount = wineCount;
+	}
+
+	public void setWineAvailable(List<String> wineAvailable) {
+		this.wineAvailable = wineAvailable;
+	}
+
+	public void setWineColor(List<String> wineColor) {
+		this.wineColor = wineColor;
+	}
+
+	public WineCount getWineCount() {
 		      return wineCount;           
 		   }
 	
-	   public List<String> getWineColor() {
+	public List<String> getWineColor() {
 		      return wineColor;           
 		   }
 	   
-	   public List<String> getWineAvailable() {
+	public List<String> getWineAvailable() {
 		      return wineAvailable;           
 		   }
 	   
-	   
-	   
-	   
+	    
 	   
 	public Project getProject() {
 		return project;
@@ -67,10 +89,8 @@ public class Winestore
 		this.moddate = moddate;
 	}
 
-	public Winestore()
-	{
-		this.wine = new ArrayList<Wine>();
-	}
+
+	// WA¯NE FUNKCJE
 	
 	
 	public void clearWinestore()

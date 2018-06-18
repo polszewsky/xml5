@@ -13,6 +13,23 @@ public class Wine
 	public Wine() {}
 	
 	
+	public Wine(String id, String available, String name, Country country, String color, String taste, int year,
+			String alcohol, String volume, Price pirce, Shipment shipment) {
+		super();
+		this.id = id;
+		this.available = available;
+		this.name = name;
+		this.country = country;
+		this.color = color;
+		this.taste = taste;
+		this.year = year;
+		this.alcohol = alcohol;
+		this.volume = volume;
+		this.pirce = pirce;
+		this.shipment = shipment;
+	}
+
+
 	@Attribute(name="id", empty="false")
 	private String id;
 	

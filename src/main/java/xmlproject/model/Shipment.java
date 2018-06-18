@@ -10,6 +10,17 @@ public class Shipment
 	public Shipment() {}
 	
 	
+	
+	
+	public Shipment(String status, Date text) {
+		super();
+		this.status = status;
+		this.text = text;
+	}
+
+
+
+
 	@Attribute(name="status")
 	private String status;
 	

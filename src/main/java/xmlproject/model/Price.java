@@ -9,10 +9,18 @@ public class Price
 {
 
 	public Price()
-	{
-		super();
-	}
+	{	}
 	
+	
+	
+	public Price(String value, String vat) {
+		super();
+		this.value = value;
+		this.vat = vat;
+	}
+
+
+
 	private String value;
 	
 	@Element(name="vat")

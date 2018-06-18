@@ -7,6 +7,13 @@ import org.simpleframework.xml.Root;
 public class WineCount
 {
 
+	public WineCount() {}
+	
+	public WineCount(String p) {
+		super();
+		this.p = p;
+	}
+
 	@Element(name="p")
 	private String p;
 

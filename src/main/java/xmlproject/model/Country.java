@@ -10,6 +10,15 @@ public class Country
 	public Country() {}
 	
 	
+	
+	public Country(String value, String cont) {
+		super();
+		this.value = value;
+		this.cont = cont;
+	}
+
+
+
 	private String value;
 	
 	@Element(name="cont", required = false)

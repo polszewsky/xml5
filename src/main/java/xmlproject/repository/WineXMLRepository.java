@@ -37,7 +37,7 @@ public class WineXMLRepository implements WineRepository
 			importWinestore = serializer.read(Winestore.class, source);
 			
 			System.out.println(importWinestore.getModdate());
-			System.out.println(importWinestore.getWineList().get(5).getPirce());
+			System.out.println(importWinestore.getWineList().get(5).getId());
 			//winestore.addWine(new Wine());
 			
 //			int winesImported = 0;

@@ -14,6 +14,15 @@ public class Project
 	public Project() {}
 	
 	
+	
+	public Project(List<Author> author, Date mod) {
+		super();
+		this.author = author;
+		this.mod = mod;
+	}
+
+
+
 	@ElementList(entry="author", inline=true, required=false)
 	private List<Author> author;
 	

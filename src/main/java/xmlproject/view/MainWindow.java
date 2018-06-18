@@ -62,6 +62,7 @@ public class MainWindow extends JFrame
 			JMenu mnFile = new JMenu("Plik");
 			menuBar.add(mnFile);
 			
+			
 			JMenuItem mnOpenFile = new JMenuItem("Otwórz z...");
 			mnFile.add(mnOpenFile);
 			
@@ -109,6 +110,40 @@ public class MainWindow extends JFrame
 						
 						e1.printStackTrace();
 						JOptionPane.showMessageDialog(null, "**ERROR** exporting xml.", "Error", JOptionPane.ERROR_MESSAGE);
+					}
+					finally
+					{
+					winePanel.showWinesAll();
+					}
+				}
+			});
+			
+			
+			JMenu mnTransform = new JMenu("Transformacja");
+			menuBar.add(mnFile);
+			
+			
+			JMenuItem mnPDFTrans = new JMenuItem("XML to PDF");
+			mnFile.add(mnOpenFile);
+			
+			// akcja transformacji
+			mnOpenFile.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e)
+				{
+					
+					
+					try
+					{
+						wineManager.importFromXML();
+						
+						JOptionPane.showMessageDialog(null, "imported XML.");
+					}
+					catch (RepoException e1)
+					{
+						
+						e1.printStackTrace();
+						
+						JOptionPane.showMessageDialog(null, "**ERROR** importing xml.", "Error", JOptionPane.ERROR_MESSAGE);
 					}
 					finally
 					{
