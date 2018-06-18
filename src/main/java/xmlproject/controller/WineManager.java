@@ -76,7 +76,7 @@ public class WineManager {
 
 	
 	// METODA DLA DOROTY
-	public void transformToPDF()
+	public void transformToPDF() throws RepoException
 	{
 		// zak³adam ¿e trzeba zrobiæ now¹ kladê PDFTransform/TransformPDF i do niej przes³aæ instancje aktual;nego winestore
 		// coœ takiego: TransformPDF transformation = New TransformPDF(winestore)

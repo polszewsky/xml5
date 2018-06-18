@@ -120,30 +120,30 @@ public class MainWindow extends JFrame
 			
 			
 			JMenu mnTransform = new JMenu("Transformacja");
-			menuBar.add(mnFile);
+			menuBar.add(mnTransform);
 			
 			
 			JMenuItem mnPDFTrans = new JMenuItem("XML to PDF");
-			mnFile.add(mnOpenFile);
+			mnTransform.add(mnPDFTrans);
 			
 			// akcja transformacji
-			mnOpenFile.addActionListener(new ActionListener() {
+			mnPDFTrans.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e)
 				{
 					
 					
 					try
 					{
-						wineManager.importFromXML();
+						wineManager.transformToPDF();
 						
-						JOptionPane.showMessageDialog(null, "imported XML.");
+						JOptionPane.showMessageDialog(null, "Transformated.");
 					}
 					catch (RepoException e1)
 					{
 						
 						e1.printStackTrace();
 						
-						JOptionPane.showMessageDialog(null, "**ERROR** importing xml.", "Error", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null, "**ERROR** transformated erroor.", "Error", JOptionPane.ERROR_MESSAGE);
 					}
 					finally
 					{

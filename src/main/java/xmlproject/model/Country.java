@@ -18,7 +18,7 @@ public class Country
 	}
 
 
-
+	
 	private String value;
 	
 	@Element(name="cont", required = false)
