@@ -40,7 +40,7 @@ public class WineXMLRepository implements WineRepository
 			System.out.println(importWinestore.getWineList().get(5).getCountry().getValue());
 			//winestore.addWine(new Wine());
 			
-//			int winesImported = 0;
+			int winesImported = 0;
 //			
 //			for(Wine w : importWinestore.getWineList())
 //			{
