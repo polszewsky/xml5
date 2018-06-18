@@ -55,24 +55,7 @@ public class WineManager {
 		
 		System.out.println("imported to XML 1");
 	}
-	
-	public void updateXML() throws RepoException
-	{
-		
-		WineXMLRepository repository = new WineXMLRepository(winestore);
-		
-		repository.updateObjects();
-		System.out.println("updated XML 1");
-	}
-	
-	public void deleteXML() throws RepoException
-	{
-		WineXMLRepository repository = new  WineXMLRepository(winestore);
-		
-		repository.deleteObjects();
-		
-		System.out.println("deleted to XML 1");
-	}
+
 
 	
 	// METODA DLA DOROTY

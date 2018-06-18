@@ -117,16 +117,5 @@ public class WineXMLRepository implements WineRepository
 		}
 		
 	}
-
-	public void updateObjects() throws RepoException {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void deleteObjects() throws RepoException {
-		// TODO Auto-generated method stub
-		
-	}
-
 	
 }

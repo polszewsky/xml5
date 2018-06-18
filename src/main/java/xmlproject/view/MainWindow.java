@@ -63,6 +63,22 @@ public class MainWindow extends JFrame
 			menuBar.add(mnFile);
 			
 			
+			JMenuItem mnAddWine = new JMenuItem("Nowe wino");
+			mnFile.add(mnAddWine);
+			mnFile.addSeparator();
+			mnFile.addSeparator();
+			
+			
+			
+			mnAddWine.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e)
+				{
+					
+				}
+			});
+			
+			
+			
 			JMenuItem mnOpenFile = new JMenuItem("Otwórz z...");
 			mnFile.add(mnOpenFile);
 			
