@@ -95,6 +95,8 @@ public class WinePanel extends JPanel{
 			String content = "Liczba win: " + wines.size() + "";
 			removeWineButton.setVisible(true);
 			
+			System.out.println("HELLO THERE: " + wines.get(5).getId());
+			
 			List<String> winesList = new ArrayList<String>();
 			for(Wine w : wines) {
 				winesList.add(w.toString());

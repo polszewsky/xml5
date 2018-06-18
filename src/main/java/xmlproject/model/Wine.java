@@ -245,6 +245,17 @@ public class Wine
 
 	public Wine clone()
 	{
-		return new Wine();
+		return new Wine(getId(),getAvailable(),getName(),getCountry(),getColor(),getTaste(),getYear(),getAlcohol(),getVolume(),getPirce(),getShipment());
 	}
+
+
+	@Override
+	public String toString() {
+		return "Wine [id=" + id +"]";
+	}
+	
+	
+	
+	
+	
 }

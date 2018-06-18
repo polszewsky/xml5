@@ -109,6 +109,7 @@ public class Winestore
 	public void addWine(Wine w) {
 		
 		wine.add(w);
+		System.out.println("Dodano do biblioteki wino " + w.getId());
 		
 	}
 	

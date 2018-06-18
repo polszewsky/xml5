@@ -13,7 +13,7 @@ public class WineManager {
 	private Winestore winestore;
 	
 	private static WineManager instance = null;
-	
+	public static String nextID = "";
 	
 	public WineManager()
 	{
