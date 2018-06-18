@@ -11,6 +11,7 @@ import xmlproject.model.Country;
 import xmlproject.model.Price;
 import xmlproject.model.Shipment;
 import xmlproject.model.Wine;
+import xmlproject.model.WineCount;
 import xmlproject.model.Winestore;
 
 public class WineXMLRepository implements WineRepository
@@ -46,6 +47,12 @@ public class WineXMLRepository implements WineRepository
 			
 			String maxWineID = "";
 			int winesImported = 0;
+			
+			winestore.setProject(importWinestore.getProject());
+			winestore.setModdate(importWinestore.getModdate());
+			winestore.setWineColor(importWinestore.getWineColor());
+			winestore.setWineAvailable(importWinestore.getWineAvailable());
+			winestore.setWineCount(importWinestore.getWineCount());
 			
 			for(Wine w : importWinestore.getWineList())
 			{
@@ -83,13 +90,31 @@ public class WineXMLRepository implements WineRepository
 		{
 		
 			e.printStackTrace();
-			System.out.println("b³¹d importu w repo -> exception");
+			throw new RepoException();
 		}
 		
 	}
 
 	public void exportObjects() throws RepoException {
-		// TODO Auto-generated method stub
+	
+		
+		try
+		{
+		
+		System.out.println("export method");
+			
+		Serializer serializer = new Persister();
+			
+		File result = new File("xml\\xmlOutput.xml");
+
+		serializer.write(winestore, result);
+		
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			throw new RepoException();
+		}
 		
 	}
 

@@ -1,0 +1,320 @@
+<winestore>
+   <project>
+      <author departament="FTIMS" faculty="TGSK">Piotr Olszewski 203957</author>
+      <author departament="FTIMS" faculty="GKM">Dorota Sachajko 195700</author>
+      <mod>2018-03-26 00:00:00.0 CEST</mod>
+   </project>
+   <wine id="W15" available="yes">
+      <name>Trottwood</name>
+      <country>
+         <cont>Australia</cont>
+      </country>
+      <color>Red</color>
+      <taste>Medium Dry</taste>
+      <year>2017</year>
+      <alcohol>13 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.52 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W1" available="yes">
+      <name>Varna</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Sweet</taste>
+      <year>2016</year>
+      <alcohol>11 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.06 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-12 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W11" available="no">
+      <name>Witosha</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Sweet</taste>
+      <year>2016</year>
+      <alcohol>17 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.06 PLN</vat>
+      </price>
+      <shipment status="delayed">2017-04-11 00:00:00.0 CEST</shipment>
+   </wine>
+   <wine id="W17" available="yes">
+      <name>Frontera</name>
+      <country>
+         <cont>South America</cont>
+      </country>
+      <color>White</color>
+      <taste>Sweet</taste>
+      <year>2014</year>
+      <alcohol>12 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 6.21 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W18" available="yes">
+      <name>Raiz</name>
+      <country>
+         <cont>South America</cont>
+      </country>
+      <color>Red</color>
+      <taste>Medium Dry</taste>
+      <year>2016</year>
+      <alcohol>12 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 6.44 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W8" available="yes">
+      <name>Chateau Les Plainiers Loupiac</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2016</year>
+      <alcohol>13 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 4.83 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W13" available="yes">
+      <name>Minervois</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>Red</color>
+      <taste>Dry</taste>
+      <year>2014</year>
+      <alcohol>13 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.75 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W16" available="no">
+      <name>Pirosmani Tbilso</name>
+      <country>
+         <cont>Asia</cont>
+      </country>
+      <color>Red</color>
+      <taste>Medium Dry</taste>
+      <year>2016</year>
+      <alcohol>12 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.29 PLN</vat>
+      </price>
+      <shipment status="delayed">2017-04-11 00:00:00.0 CEST</shipment>
+   </wine>
+   <wine id="W9" available="no">
+      <name>Zmora</name>
+      <country>
+         <cont>Asia</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2015</year>
+      <alcohol>11 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.98 PLN</vat>
+      </price>
+      <shipment status="delayed">2017-04-11 00:00:00.0 CEST</shipment>
+   </wine>
+   <wine id="W14" available="yes">
+      <name>Fortre Elerone Puglia</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>Red</color>
+      <taste>Medium Dry</taste>
+      <year>2014</year>
+      <alcohol>14 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.29 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W20" available="yes">
+      <name>Casa Pecunia</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>Red</color>
+      <taste>Medium Dry</taste>
+      <year>2017</year>
+      <alcohol>13 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.75 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W7" available="yes">
+      <name>Rozendaal</name>
+      <country>
+         <cont>Africa</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2015</year>
+      <alcohol>11 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.29 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W5" available="no">
+      <name>Freixenet Mia</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2015</year>
+      <alcohol>11 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.06 PLN</vat>
+      </price>
+      <shipment status="delayed">2017-04-11 00:00:00.0 CEST</shipment>
+   </wine>
+   <wine id="W6" available="yes">
+      <name>Chardonnay Semidulce</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2016</year>
+      <alcohol>10 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.98 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W10" available="yes">
+      <name>Campo Viejo Rioha</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2016</year>
+      <alcohol>11 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.98 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W12" available="yes">
+      <name>Campos de Dulcinea</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>White</color>
+      <taste>Medium Sweet</taste>
+      <year>2016</year>
+      <alcohol>12 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.29 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W19" available="no">
+      <name>Finca La Estacada</name>
+      <country>
+         <cont>Europe</cont>
+      </country>
+      <color>Red</color>
+      <taste>Dry</taste>
+      <year>2016</year>
+      <alcohol>14 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 8.05 PLN</vat>
+      </price>
+      <shipment status="delayed">2017-04-11 00:00:00.0 CEST</shipment>
+   </wine>
+   <wine id="W2" available="no">
+      <name>David Mogen Pommegranate</name>
+      <country>
+         <cont>North America</cont>
+      </country>
+      <color>Red</color>
+      <taste>Sweet</taste>
+      <year>2016</year>
+      <alcohol>10 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.29 PLN</vat>
+      </price>
+      <shipment status="delayed">2017-04-11 00:00:00.0 CEST</shipment>
+   </wine>
+   <wine id="W3" available="yes">
+      <name>David Mogen Blackberry</name>
+      <country>
+         <cont>North America</cont>
+      </country>
+      <color>Red</color>
+      <taste>Sweet</taste>
+      <year>2016</year>
+      <alcohol>10 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 5.29 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <wine id="W4" available="yes">
+      <name>Apothic Red</name>
+      <country>
+         <cont>North America</cont>
+      </country>
+      <color>Red</color>
+      <taste>Medium Dry</taste>
+      <year>2014</year>
+      <alcohol>13 %</alcohol>
+      <volume>0.75 l</volume>
+      <price>
+         <vat> w tym VAT 10.35 PLN</vat>
+      </price>
+      <shipment status="ontime">2017-03-11 00:00:00.0 CET</shipment>
+   </wine>
+   <moddate>Data modyfikacji: 2018-05-05+02:00</moddate>
+   <wineCount>
+      <p>Liczba sprzedawanych win: 20</p>
+   </wineCount>
+   <wineAvailable class="java.util.ArrayList">
+      <string>Liczba dostepnych win: 14</string>
+      <string>Liczba niedostepnych win: 6</string>
+   </wineAvailable>
+   <wineColor class="java.util.ArrayList">
+      <string>Liczba win czerwonych: 10</string>
+      <string>Liczba win białych: 10</string>
+      <string>Liczba win różowych: 0</string>
+   </wineColor>
+</winestore>
