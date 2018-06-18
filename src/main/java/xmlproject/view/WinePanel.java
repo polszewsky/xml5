@@ -51,10 +51,10 @@ public class WinePanel extends JPanel{
             public void actionPerformed(ActionEvent e) {
             	// bierzemy pierwsze 5 znakow z elementu listy - 
             	// bo event_id wyswietlamy zawsze na 5 miejscach (tak jak jest napisane w Event toString())
-//            	String selectedWineId = WinePanel.this.eventsJList.getSelectedValue().substring(0, 5).replaceAll(" ", "");
+            	String selectedWineId = WinePanel.this.winesJList.getSelectedValue().substring(0, 5).replaceAll(" ", "");
 //            	Long eventId = Long.parseLong(selectedEventId);
-//            	CalendarManager.getInstance().removeEventById(eventId);
-//            	showEventsFromDay(currentlyDisplayedDate);
+            	WineManager.getInstance().removeWineById(selectedWineId);
+            	showWinesAll();
             }
         });
 		add(removeWineButton);
@@ -95,7 +95,7 @@ public class WinePanel extends JPanel{
 			String content = "Liczba win: " + wines.size() + "";
 			removeWineButton.setVisible(true);
 			
-			System.out.println("HELLO THERE: " + wines.get(5).getId());
+			
 			
 			List<String> winesList = new ArrayList<String>();
 			for(Wine w : wines) {

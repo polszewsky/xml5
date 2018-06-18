@@ -83,4 +83,24 @@ public class WineManager {
 		// transformation.transformToPDF();
 		
 	}
+
+	public void removeWineById(String id)
+	{
+		System.out.println("Removing event with id " + id);
+		for(Wine w : winestore.getWineList()){
+						
+			if(w.getId().equals(id)) {
+				winestore.getWineList().remove(w);
+				System.out.println("usuniêto!");
+				break;
+			}
+		}
+//		try {
+//			exportXML();
+//		} catch (RepoException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+//		
+	}
 }
