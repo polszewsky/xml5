@@ -78,13 +78,25 @@ public class WineManager {
 				break;
 			}
 		}
-//		try {
-//			exportXML();
-//		} catch (RepoException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
-//		
+	}	
+		public Wine getWineById(String id)
+		{
+		
+			Wine returnWine = null;
+			
+			System.out.println("returning wine by id " + id);
+			for(Wine w : winestore.getWineList()){
+							
+				if(w.getId().equals(id)) {
+					
+					returnWine = w.clone();
+					break;
+				}
+			}
+		
+			System.out.println("zwrocono wino!");
+			
+			return returnWine;
 	}
 
 	public void addNewWine(Wine w) {
