@@ -13,7 +13,7 @@ public class WineManager {
 	private Winestore winestore;
 	
 	private static WineManager instance = null;
-	
+	public static String nextID = "";
 	
 	public WineManager()
 	{
@@ -55,24 +55,7 @@ public class WineManager {
 		
 		System.out.println("imported to XML 1");
 	}
-	
-	public void updateXML() throws RepoException
-	{
-		
-		WineXMLRepository repository = new WineXMLRepository(winestore);
-		
-		repository.updateObjects();
-		System.out.println("updated XML 1");
-	}
-	
-	public void deleteXML() throws RepoException
-	{
-		WineXMLRepository repository = new  WineXMLRepository(winestore);
-		
-		repository.deleteObjects();
-		
-		System.out.println("deleted to XML 1");
-	}
+
 
 	
 	// METODA DLA DOROTY
@@ -81,6 +64,44 @@ public class WineManager {
 		// zak³adam ¿e trzeba zrobiæ now¹ kladê PDFTransform/TransformPDF i do niej przes³aæ instancje aktual;nego winestore
 		// coœ takiego: TransformPDF transformation = New TransformPDF(winestore)
 		// transformation.transformToPDF();
+		
+	}
+
+	public void removeWineById(String id)
+	{
+		System.out.println("Removing event with id " + id);
+		for(Wine w : winestore.getWineList()){
+						
+			if(w.getId().equals(id)) {
+				winestore.getWineList().remove(w);
+				System.out.println("usuniêto!");
+				break;
+			}
+		}
+	}	
+		public Wine getWineById(String id)
+		{
+		
+			Wine returnWine = null;
+			
+			System.out.println("returning wine by id " + id);
+			for(Wine w : winestore.getWineList()){
+							
+				if(w.getId().equals(id)) {
+					
+					returnWine = w.clone();
+					break;
+				}
+			}
+		
+			System.out.println("zwrocono wino!");
+			
+			return returnWine;
+	}
+
+	public void addNewWine(Wine w) {
+		
+		winestore.addWine(w);
 		
 	}
 }

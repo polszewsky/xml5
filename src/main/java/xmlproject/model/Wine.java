@@ -245,6 +245,24 @@ public class Wine
 
 	public Wine clone()
 	{
-		return new Wine();
+		return new Wine(getId(),getAvailable(),getName(),getCountry(),getColor(),getTaste(),getYear(),getAlcohol(),getVolume(),getPirce(),getShipment());
 	}
+
+
+	@Override
+	public String toString()
+	{
+		String result = String.format("%-5s | Dostêpny: %s , Nazwa: %s , Kraj %s , Kontynent %s , Kolor: %s , Smak: %s , Rok: %s , Alk. %s , Obj: %s , Cena: %s , Dostawa: %s , Status: %s",
+								id,available,name,country.getValue(),country.getCont(),color,taste,year,alcohol,volume,pirce.getValue(),shipment.getText().toString(),shipment.getStatus());
+		
+		return result;
+	}
+
+
+
+	
+	
+	
+	
+	
 }

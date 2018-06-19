@@ -26,6 +26,7 @@ public class WinePanel extends JPanel{
 
 	private WineManager wManager = null;
 	JButton removeWineButton = null;
+	JButton editWineButton = null;
 	JScrollPane winesScrollPane;
 	JList<String> winesJList;
 	JLabel winesCountLabel = new JLabel("");
@@ -51,13 +52,32 @@ public class WinePanel extends JPanel{
             public void actionPerformed(ActionEvent e) {
             	// bierzemy pierwsze 5 znakow z elementu listy - 
             	// bo event_id wyswietlamy zawsze na 5 miejscach (tak jak jest napisane w Event toString())
-//            	String selectedWineId = WinePanel.this.eventsJList.getSelectedValue().substring(0, 5).replaceAll(" ", "");
+            	String selectedWineId = WinePanel.this.winesJList.getSelectedValue().substring(0, 5).replaceAll(" ", "");
 //            	Long eventId = Long.parseLong(selectedEventId);
-//            	CalendarManager.getInstance().removeEventById(eventId);
-//            	showEventsFromDay(currentlyDisplayedDate);
+            	WineManager.getInstance().removeWineById(selectedWineId);
+            	showWinesAll();
             }
         });
 		add(removeWineButton);
+		
+		
+		editWineButton = new JButton("edytuj pozycjê");
+		editWineButton.setBounds(300, 480, 200, 25);
+		editWineButton.setVisible(false);
+		editWineButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	// bierzemy pierwsze 5 znakow z elementu listy - 
+            	// bo event_id wyswietlamy zawsze na 5 miejscach (tak jak jest napisane w Event toString())
+            	String selectedWineId = WinePanel.this.winesJList.getSelectedValue().substring(0, 5).replaceAll(" ", "");
+
+				
+				EditWineDialog editWineDialog = new EditWineDialog(selectedWineId);
+				editWineDialog.setVisible(true);
+            	
+            }
+        });
+		add(editWineButton);
+		
 		
 		winesCountLabel.setBounds(10, 40, 250, 25);
 		winesCountLabel.setVerticalAlignment(JLabel.TOP);
@@ -94,6 +114,9 @@ public class WinePanel extends JPanel{
 		else {
 			String content = "Liczba win: " + wines.size() + "";
 			removeWineButton.setVisible(true);
+			editWineButton.setVisible(true);
+			
+			
 			
 			List<String> winesList = new ArrayList<String>();
 			for(Wine w : wines) {

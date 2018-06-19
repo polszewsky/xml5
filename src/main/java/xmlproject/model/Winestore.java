@@ -18,22 +18,22 @@ public class Winestore
 	}
 	
 	
-	@Element(name="project")
+	@Element(name="project", required = false)
 	private Project project;
 	
 	@ElementList(inline = true, required = false)
 	private List<Wine> wine;
 	
-	@Element(name="moddate")
+	@Element(name="moddate", required = false)
 	private String moddate;
 	
-	@Element(name="wineCount")
+	@Element(name="wineCount", required = false)
 	private WineCount wineCount;        
 
-	@ElementList(name="wineAvailable")
+	@ElementList(name="wineAvailable", required = false)
 	private List<String> wineAvailable;        
 
-	@ElementList(name="wineColor")
+	@ElementList(name="wineColor", required = false)
 	private List<String> wineColor;        
        
 
@@ -109,6 +109,7 @@ public class Winestore
 	public void addWine(Wine w) {
 		
 		wine.add(w);
+		System.out.println("Dodano do biblioteki wino " + w.getId());
 		
 	}
 	

@@ -9,7 +9,4 @@ public interface WineRepository
 	
 	public void exportObjects() throws RepoException;
 	
-	public void updateObjects() throws RepoException;
-	
-	public void deleteObjects() throws RepoException;
 }
