@@ -170,23 +170,11 @@ public class MainWindow extends JFrame
 				{
 					
 					
-					try
-					{
+					
 						wineManager.transformToPDF();
 						
-						JOptionPane.showMessageDialog(null, "Transformated.");
-					}
-					catch (RepoException e1)
-					{
 						
-						e1.printStackTrace();
-						
-						JOptionPane.showMessageDialog(null, "**ERROR** transformated erroor.", "Error", JOptionPane.ERROR_MESSAGE);
-					}
-					finally
-					{
-					winePanel.showWinesAll();
-					}
+				
 				}
 			});
 			
