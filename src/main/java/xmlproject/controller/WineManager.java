@@ -1,12 +1,16 @@
 package xmlproject.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.lowagie.text.DocumentException;
 
 import xmlproject.exception.RepoException;
 import xmlproject.model.Wine;
 import xmlproject.model.Winestore;
 import xmlproject.repository.WineXMLRepository;
+import xmlproject.transform.*;
 
 public class WineManager {
 
@@ -59,11 +63,22 @@ public class WineManager {
 
 	
 	// METODA DLA DOROTY
-	public void transformToPDF() throws RepoException
+	public void transformToPDF()
 	{
 		// zak³adam ¿e trzeba zrobiæ now¹ kladê PDFTransform/TransformPDF i do niej przes³aæ instancje aktual;nego winestore
 		// coœ takiego: TransformPDF transformation = New TransformPDF(winestore)
 		// transformation.transformToPDF();
+		
+		PDFTransform transform = new PDFTransform();
+		try {
+			transform.transformToPDF();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (DocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 

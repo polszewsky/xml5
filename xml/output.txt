@@ -1,0 +1,61 @@
+Piotr Olszewski 203957
+Dorota Sachajko 195700
+Winestore by D.P
+Podsumowaine sklepu: 2018r
+
+                  Nazwa       ||     Kontynent       ||    Kolor       ||    Wytrawność     ||    Rok       ||    Cena      
+------------------------------||---------------------||----------------||---------------------||--------------||------------------------
+Trottwood                     || Australia           || Red            || Medium Dry          || 2017         || 24 PLN w tym VAT 5.52 PLN
+		  
+Varna                         || Europe              || White          || Sweet               || 2016         || 22 PLN w tym VAT 5.06 PLN
+		  
+Witosha                       || Europe              || White          || Sweet               || 2016         || 22 PLN w tym VAT 5.06 PLN
+		  
+Frontera                      || South America       || White          || Sweet               || 2014         || 27 PLN w tym VAT 6.21 PLN
+		  
+Raiz                          || South America       || Red            || Medium Dry          || 2016         || 28 PLN w tym VAT 6.44 PLN
+		  
+Chateau Les Plainiers Loupiac || Europe              || White          || Medium Sweet        || 2016         || 21 PLN w tym VAT 4.83 PLN
+		  
+Minervois                     || Europe              || Red            || Dry                 || 2014         || 25 PLN w tym VAT 5.75 PLN
+		  
+Pirosmani Tbilso              || Asia                || Red            || Medium Dry          || 2016         || 23 PLN w tym VAT 5.29 PLN
+		  
+Zmora                         || Asia                || White          || Medium Sweet        || 2015         || 26 PLN w tym VAT 5.98 PLN
+		  
+Fortre Elerone Puglia         || Europe              || Red            || Medium Dry          || 2014         || 23 PLN w tym VAT 5.29 PLN
+		  
+Casa Pecunia                  || Europe              || Red            || Medium Dry          || 2017         || 25 PLN w tym VAT 5.75 PLN
+		  
+Rozendaal                     || Africa              || White          || Medium Sweet        || 2015         || 23 PLN w tym VAT 5.29 PLN
+		  
+Freixenet Mia                 || Europe              || White          || Medium Sweet        || 2015         || 22 PLN w tym VAT 5.06 PLN
+		  
+Chardonnay Semidulce          || Europe              || White          || Medium Sweet        || 2016         || 26 PLN w tym VAT 5.98 PLN
+		  
+Campo Viejo Rioha             || Europe              || White          || Medium Sweet        || 2016         || 26 PLN w tym VAT 5.98 PLN
+		  
+Campos de Dulcinea            || Europe              || White          || Medium Sweet        || 2016         || 23 PLN w tym VAT 5.29 PLN
+		  
+Finca La Estacada             || Europe              || Red            || Dry                 || 2016         || 35 PLN w tym VAT 8.05 PLN
+		  
+David Mogen Pommegranate      || North America       || Red            || Sweet               || 2016         || 23 PLN w tym VAT 5.29 PLN
+		  
+David Mogen Blackberry        || North America       || Red            || Sweet               || 2016         || 23 PLN w tym VAT 5.29 PLN
+		  
+Apothic Red                   || North America       || Red            || Medium Dry          || 2014         || 45 PLN w tym VAT 10.35 PLN
+		 
+
+-------------------------------------------
+
+		Liczba sprzedawanych win: 20
+	
+		Liczba dostepnych win: 14
+		Liczba niedostepnych win: 6
+	
+
+
+		Liczba win czerwonych: 10
+		Liczba win białych: 10
+		Liczba win różowych: 0
+	
